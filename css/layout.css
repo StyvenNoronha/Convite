@@ -1,0 +1,82 @@
+#app {
+  display: grid;
+  grid-template-columns: 33.59% 66.41%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  .aside-container {
+    height: 736px;
+    overflow: auto;
+    background:url("../assets/Background.png") no-repeat  center ;
+    
+    background-size: 400px 728px;
+    margin: 20px 0px 20px 20px;
+    border-radius: 20px;
+    
+    .aside-content {
+      width: 336px;
+      margin: 4rem;
+      
+      
+      img {
+        width: 45.85px;
+        height: 48px;
+      }
+
+      h1 {
+        font-family: var(--Leckerli_One);
+        font-size: 2.5rem;
+        color: var(--pink);
+      }
+
+      p {
+        font-family: var(--Open-Sans);
+        font-size: 1rem;
+        color: var(--text-heading);
+      }
+    }
+  }
+}
+
+main {
+ overflow: auto;
+  margin: 20px 20px 20px 0px;
+  padding-block: 80px;
+  padding-inline: 129px;
+  background-color: var(--shape-body);
+  border-radius: 20px;
+
+  .main-container{
+    
+    & h1{
+      color: var(--text-heading);
+      font-size: 28px;
+      font-weight: bold;
+      font-family: var(--Baloo_2);
+      margin-bottom: 40px;
+    }
+    & form{
+      & fieldset{
+        & legend{
+          display: flex;
+          align-items: center;
+          
+          & p{
+            margin-left: 12px;
+            color: var(--text-heading);
+            font-size: 18px;
+            font-weight: bold;
+            font-family: var(--Baloo_2);
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+

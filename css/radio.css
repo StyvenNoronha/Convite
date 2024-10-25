@@ -1,0 +1,100 @@
+.radio {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.radio {
+  border: 4px solid var(--shape-button);
+}
+
+.radio:hover {
+  border: 4px solid var(--shape-hover);
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+#cor-1 {
+  background-color: var(--brand-light);
+}
+
+#cor-2 {
+  background-color: var(--navy);
+}
+#cor-3 {
+  background-color: var(--purple);
+}
+#cor-4 {
+  background-color: var(--fuschia);
+}
+#cor-5 {
+  background-color: var(--pink);
+}
+#cor-6 {
+  background-color: var(--danger);
+}
+#cor-7 {
+  background-color: var(--orange);
+}
+#cor-8 {
+  background-color: var(--yellow);
+}
+#cor-9 {
+  background-color: var(--lime);
+}
+#cor-10 {
+  background-color: var(--green);
+}
+#cor-11 {
+  background-color: var(--cyan);
+}
+
+.radio-wrapper {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+  gap: 1rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--shape-hover);
+  border-radius: 0.5rem;
+
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+
+  padding-inline: 4px;
+
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+  &:has(input:checked) {
+    border-color: var(--brand-light);
+  }
+}
+
+.card {
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--Open-Sans);
+  color: var(--text-heading);
+  font-weight: 500;
+}

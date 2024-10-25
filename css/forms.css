@@ -1,0 +1,46 @@
+fieldset {
+  border: none;
+  display: grid;
+}
+
+.textarea-wrapper{
+  margin-top: 16px;
+}
+
+input,
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+  background-color: var(--input-base);
+  font-size: 1rem;
+  font-family: var(--Open-Sans);
+  color: var(--input-placeholder);
+}
+
+.input-wrapper {
+  display: grid;
+  margin-block: 0.5rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-size: 14px;
+  font-family: var(--Open-Sans);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--shape-hover);
+}
+
+
+fieldset + fieldset{
+  margin-top: 3rem;
+}

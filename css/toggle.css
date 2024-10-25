@@ -1,0 +1,172 @@
+.toggle-container {
+    border: 1px solid var(--input-stroke);
+    position: relative;
+    display: inline-block;
+    width: 320px; /* Largura do container */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .toggle-container input {
+    display: none;
+  }
+  
+  .toggle-button {
+    position: relative;
+    width: 50%; /* Cada botão ocupa metade da largura */
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+  
+  #presencial:checked ~ label[for="presencial"] {
+    color: #fff;
+    
+  }
+  
+  #online:checked ~ label[for="online"] {
+    color: #fff;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* O slider ocupa metade do container */
+    height: 100%;
+    background-color: var(--shape-button); /* Cor do botão selecionado */
+    border-radius: 8px;
+    transition: left 0.4s ease;
+    z-index: 1;
+  }
+  
+  #online:checked ~ .slider {
+    left: 50%; /* Move o slider para o lado direito quando "Online" é selecionado */
+  }
+  
+  #presencial:checked ~ .slider {
+    left: 0; /* Move o slider para o lado esquerdo quando "Presencial" é selecionado */
+  }
+  
+  .toggle-button {
+    color: var(--input-placeholder); /* Cor do texto dos botões não selecionados */
+  }
+  
+  #presencial:checked ~ label[for="presencial"],
+  #online:checked ~ label[for="online"] {
+    color: var(--input-placeholder); /* Cor do texto do botão selecionado */
+  }
+  
+  .icone-p{
+    width: 1rem;
+    height: 1rem;
+  }
+
+  
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: #ffffff var(--mode) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slideback 0.5s forwards;
+}
+
+.light #switch button {
+  animation: slide 0.5s forwards;
+}
+
+#switch span {
+  display: block;
+  width: 65px;
+  height: 24px;
+  background: var(--cor-botao);
+  border: 1px solid var(--border-cor);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderr{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--input-base);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderr:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--input-stroke);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .sliderr {
+  background-color: #2196F3;
+}
+
+input:focus + .sliderr {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderr:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.sliderr.round {
+  border-radius: 34px;
+}
+
+.sliderr.round:before {
+  border-radius: 50%;
+}
+
+
+  

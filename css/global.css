@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
+
+  --danger: #ff5959;
+
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+
+  --Leckerli_One: "Leckerli One", cursive;
+  --Baloo_2: "Baloo 2", sans-serif;
+  --Open-Sans: "Open Sans", sans-serif;
+
+  --heading-md: var(--Baloo_2) 1.75rem bold;
+  --heading-sm: var(--Baloo_2) 1.125rem bold;
+
+  --body_md: var(--Open-Sans) 1rem;
+  --body_sm: var(--Open-Sans) 0.875rem;
+  --body_xs: var(--Open-Sans) 0.75rem;
+}
+
+body {
+  /* Com o overflow hidden, o scroll não vai aparecer */
+  overflow: hidden;
+  background-color: var(--shape-background);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.margin-16 {
+  margin-right: 16px;
+}
+
+.error{
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+
+  font-size: 12px;
+  font-family: var(--body_sm);
+  color: var(--danger);
+
+  margin-top: .25rem;
+}
+
+#nome{
+    border: 1px solid var(--danger);
+}
+
+
+hr{
+  margin-top: 48px;
+  margin-bottom: 40px;
+  color: #363B40;
+}
+
+#cinza{
+  background-color: var(--shape-button);
+}
+
+h3{
+  margin-left: 12px;
+  font-family: var(--Baloo_2);
+  font-size: 1rem;
+  color: var(--input-placeholder);
+}
+

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <div class="aside-content">
+            <img src="assets/icons/Logo.svg" alt="Logo" />
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+          <form>
+            <fieldset>
+              <legend>
+                <img src="assets/calendar.svg" alt="icone de calendario" />
+                <p>Sobre o evento</p>
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="titulo">Título</label>
+                <input id="titulo" type="text" placeholder="Nome do evento" />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-1 margin-16">
+                  <label for="Inicio">Inicio</label>
+                  <input id="Inicio" type="date" lang="pt-br" class="" />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="Fim">Fim</label>
+                  <input id="Fim" type="date" lang="pt-br" class="" />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-1 margin-16">
+                  <label for="Tipo">Tipo</label>
+
+                  <div class="toggle-container flex-1">
+                    <input type="radio" id="presencial" name="toggle" checked />
+                    <label for="presencial" class="toggle-button">
+                      <img class="icone-p" src="assets/building-2.svg" alt="" />
+                      Presencial</label
+                    >
+
+                    <input type="radio" id="online" name="toggle" />
+                    <label for="online" class="toggle-button">
+                      <img class="icone-p" src="assets/video.svg" alt="" />
+                      Online</label
+                    >
+
+                    <div class="slider"></div>
+                  </div>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="Local">Local</label>
+                  <input
+                    id="Local"
+                    type="text"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="Desc">Descrição</label>
+                <textarea
+                  name="Desc"
+                  id="Desc"
+                  cols="30"
+                  rows="10"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <img src="assets/paintbrush-vertical.svg" alt="" />
+                <p>Personalização</p>
+              </legend>
+              <div class="input-wrapper">
+                <label>Cor Principal</label>
+                <div class="flex space-between">
+                  <input class="radio" id="cor-1" type="radio" />
+                  <input class="radio" id="cor-2" type="radio" />
+                  <input class="radio" id="cor-3" type="radio" />
+                  <input class="radio" id="cor-4" type="radio" />
+                  <input class="radio" id="cor-5" type="radio" />
+                  <input class="radio" id="cor-6" type="radio" />
+                  <input class="radio" id="cor-7" type="radio" />
+                  <input class="radio" id="cor-8" type="radio" />
+                  <input class="radio" id="cor-9" type="radio" />
+                  <input class="radio" id="cor-10" type="radio" />
+                  <input class="radio" id="cor-11" type="radio" />
+                </div>
+
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="aniversary" />
+                    <img src="assets/tema/niver.png" alt="icone de futebol" />
+                    <label class="card" for="aniversary">Aniversário</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="infantil" />
+                    <img
+                      src="assets/tema/infantil.png"
+                      alt="icone de infantil"
+                    />
+                    <label class="card" for="basketball">Infantil</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="formatura" />
+                    <img
+                      src="assets/tema/formatura.png"
+                      alt="icone de formatura"
+                    />
+                    <label class="card" for="formatura">formatura</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="casamento" />
+                    <img
+                      src="assets/tema/casamento.png"
+                      alt="icone de casamento"
+                    />
+                    <label class="card" for="casamento">Casamento</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="bebe" />
+                    <img src="assets/tema/bebe.png" alt="icone de bebe " />
+                    <label class="card" for="bebe">bebe</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="panela" />
+                    <img src="assets/tema/panela.png" alt="icone de panela " />
+                    <label class="card" for="panela">panela</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="carnaval" />
+                    <img
+                      src="assets/tema/carnaval.png"
+                      alt="icone de carnaval "
+                    />
+                    <label class="card" for="carnaval">Carnaval</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="pascoa" />
+                    <img src="assets/tema/pascoa.png" alt="icone de Páscoa " />
+                    <label class="card" for="pascoa">Páscoa</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="sao_joao" />
+                    <img
+                      src="assets/tema/sao_joao.png"
+                      alt="icone de são joão "
+                    />
+                    <label class="card" for="sao_joao">São joão</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="haloween" />
+                    <img
+                      src="assets/tema/haloween.png"
+                      alt="icone de haloween "
+                    />
+                    <label class="card" for="haloween">Haloween</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="natal" />
+                    <img src="assets/tema/natal.png" alt="icone de natal " />
+                    <label class="card" for="natal">Natal</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="sport" id="outros" />
+                    <img src="assets/tema/outros.png" alt="icone de Outros " />
+                    <label class="card" for="outros">Outros</label>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="input-wrapper flex-1">
+                    <label for="">Estilo</label>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="sliderr round"></span>
+                    </label>
+                  </div>
+
+                  <div class=" centro flex flex-2">
+                    <button id="cinza" class="btn-primary flex " type="submit">
+                      <img src="assets/upload.svg" alt="" />
+                      <p>Selecionar</p>
+                    </button>
+  
+                    <h3>Nenhum arquivo selecionado</h3>
+  
+                  </div>
+
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <img src="assets/contact.svg" alt="icone de contatos" />
+                <p>Dados de contato</p>
+              </legend>
+              <div class="input-wrapper">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Nome completo" />
+                <div class="error">
+                  <img src="assets/icons/alert-circle.svg" alt="" />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper flex-1 margin-16">
+                  <label for="E-mail">E-mail</label>
+                  <input
+                    id="E-mail"
+                    type="text"
+                    placeholder="exemple@gmail.com"
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="Fim">Telefone</label>
+                  <input
+                    id="telefone"
+                    type="text"
+                    placeholder="(99)99999-9999"
+                  />
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms"
+                  >Declaro que li e concordo com os
+                  <strong>Termos e Condições</strong> e com a
+                  <strong>Política de Privacidade</strong> da escola Estrela do
+                  Amanhã.
+                </label>
+              </div>
+              <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms"
+                  >Aceito receber atualizações e promoções por e-mail
+                </label>
+              </div>
+              <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms"
+                  >Aceito receber atualizações e promoções por SMS
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn-primary flex" type="submit">
+              <img src="assets/ticket.svg" alt="" />
+              <p>Gerar convite</p>
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
